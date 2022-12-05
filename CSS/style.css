@@ -1,0 +1,44 @@
+.btn-main, .btn-sec, .btn-sec-s, .btn-main-s {
+  padding: 0.25rem 1.5rem;
+  border-radius: 0.25rem;
+  background-color: #0075FF;
+  color: white;
+  border: solid 1px #0075FF;
+}
+.btn-main:hover, .btn-sec:hover, .btn-sec-s:hover, .btn-main-s:hover {
+  background-color: rgb(255, 255, 255);
+  color: #0075FF;
+  border: solid 1px #0075FF;
+}
+.btn-main-s {
+  font-size: 0.75rem;
+  padding: 0.1rem 1rem;
+}
+
+.btn-sec, .btn-sec-s {
+  color: #000000;
+  background-color: transparent;
+  border: none;
+}
+.btn-sec:hover, .btn-sec-s:hover {
+  color: #888;
+}
+.btn-sec-s {
+  font-size: 0.75rem;
+  padding: 0.1rem 1rem;
+}
+
+.main-menu li {
+  font-size: 0.75rem;
+  list-style: none;
+  display: inline;
+}
+
+.icon-sm i {
+  padding: 0.1rem 0.25rem;
+  border-radius: 50%;
+  color: #0075FF;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3333333333);
+}
+
+/*# sourceMappingURL=style.css.map */
