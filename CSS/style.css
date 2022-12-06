@@ -28,38 +28,50 @@
   padding: 0.1rem 1rem;
 }
 
+.main-menu {
+  margin-bottom: 0;
+}
 .main-menu li {
-  font-size: 0.75rem;
+  font-size: 1rem;
   list-style: none;
   display: inline;
+  margin-right: 2rem;
+}
+.main-menu li a {
+  color: #000000;
+  text-decoration: none;
+}
+.main-menu li a:hover {
+  text-decoration: underline;
 }
 
 .icon-sm i {
-  padding: 0.1rem 0.25rem;
+  font-size: 1.25rem;
+  padding: 0.4rem 0.65rem;
   border-radius: 50%;
   color: #0075FF;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3333333333);
 }
 
-.feature {
+.benefit {
   display: flex;
   flex-direction: column;
 }
-.feature .icon {
+.benefit .icon {
   color: #0075FF;
-  font-size: 10rem;
+  font-size: 6.5rem;
   text-align: center;
 }
-.feature .description .title {
+.benefit .description .title {
   font-size: 2rem;
   text-align: center;
 }
-.feature .description .text {
+.benefit .description .text {
   color: rgba(152, 152, 152, 0.7);
   font-weight: 600;
   text-align: center;
 }
-.feature .cta {
+.benefit .cta {
   margin-top: 3rem;
   color: #0075FF;
   font-weight: 600;
@@ -81,6 +93,124 @@
   margin-top: -3rem;
   font-size: 1.5rem;
   font-weight: 600;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 4rem;
+  border-bottom: solid 1px #ddd;
+}
+
+.logo a img {
+  max-width: 6rem;
+}
+
+.sec-home {
+  width: 100%;
+  padding: 3rem;
+  max-width: 999px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+.sec-home .home-cta {
+  flex: 1;
+}
+.sec-home .home-cta .cta-text {
+  color: #0075FF;
+}
+.sec-home .home-cta .home-title {
+  width: 20rem;
+  font-size: 3rem;
+}
+.sec-home .home-img img {
+  width: 45rem;
+  margin-top: -1rem;
+}
+
+.sec-features, .sec-benefits .intro {
+  width: 100%;
+  padding: 3rem;
+  max-width: 999px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sec-features .intro, .sec-benefits .intro .intro {
+  text-align: center;
+}
+.sec-features .intro h3, .sec-benefits .intro .intro h3 {
+  font-size: 1.8rem;
+}
+.sec-features .intro p, .sec-benefits .intro .intro p {
+  font-size: 0.8rem;
+  color: #888;
+}
+.sec-features .features, .sec-benefits .intro .features {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin: auto;
+}
+.sec-features .features .text, .sec-benefits .intro .features .text {
+  float: 1;
+  padding: 2rem 0;
+  max-width: 50%;
+}
+.sec-features .features .text .feature, .sec-benefits .intro .features .text .feature {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.sec-features .features .text .feature .description, .sec-benefits .intro .features .text .feature .description {
+  margin-left: 1rem;
+  max-width: 20rem;
+}
+.sec-features .features .text .feature .description .description-title, .sec-benefits .intro .features .text .feature .description .description-title {
+  font-size: 1.15rem;
+}
+.sec-features .features .text .feature .description .description-text, .sec-benefits .intro .features .text .feature .description .description-text {
+  font-size: 1rem;
+}
+.sec-features .features .image img, .sec-benefits .intro .features .image img {
+  max-width: 25rem;
+}
+
+.sec-benefits {
+  border-top: 1px solid #ddd;
+}
+.sec-benefits .benefit-cards {
+  width: 100%;
+  padding: 0 2rem;
+}
+
+.sec-kpis {
+  width: 100%;
+  background-color: #0075FF;
+  color: white;
+  padding: 4rem;
+}
+.sec-kpis .kpi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sec-kpis .number {
+  font-size: 3rem;
+  font-weight: 600;
+}
+.sec-kpis .desc-number {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6666666667);
 }
 
 /*# sourceMappingURL=style.css.map */
