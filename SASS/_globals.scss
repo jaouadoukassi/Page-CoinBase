@@ -6,6 +6,10 @@
     margin: auto;
 }
 
+html{
+    min-width: 100vw;
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -37,6 +41,14 @@ body{
             width: 20rem;
             font-size: 3rem;
         }
+        .home-description{
+            width: 300px;
+        }
+        .lead-magnet{
+            .input-col{
+                max-width: 300px;
+            }
+        }
     }
     .home-img img{
         width: 45rem;
@@ -67,7 +79,7 @@ body{
         .text{
             float: 1;
             padding: 2rem 0;
-            max-width: 50%;
+            max-width: 100%;
             .feature{
                 display: flex;
                 flex-direction: row;
@@ -124,4 +136,74 @@ body{
     font-size: 0.9rem;
     color: #ffffffaa;
    }
+}
+
+.sec-onboarding{    
+    .intro{        
+        @extend .sec-features, .intro;
+    }
+    .steps{
+        padding: 0 7rem 5rem 7rem;
+        display: flex;
+        align-items: center;    
+        justify-content: center;
+        .step-separator{
+            flex: 1;
+            margin: 0 1rem;
+            border-top: 2px solid #ddd;
+        }
+    }
+}
+
+.sec-footer-cta{    
+    background-color: components.$footer-color;
+    background-image: url(/Page-CoinBase/assets/img/bg.webp);
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: 40rem;
+    padding: 5rem;
+    .footer-cta{
+        width: 50%;
+        .title-cta{
+            font-size: 2rem;
+        }
+        .descreption-cta{
+            font-size: 1.1rem;
+        }
+    }
+    
+}
+
+@media (max-width: 768px) {
+
+    .sec-onboarding{
+        .steps{
+            flex-direction: column;
+            .icon-desc{
+                .title{
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .sec-footer-cta{
+        background-image: none;
+        .footer-cta{
+            width: 100%;
+            text-align: center;
+        }
+    }
+    .sec-kpis{
+        width: auto;
+        padding-bottom:0.5rem ;
+        .kpi{
+            padding: 1rem ;
+        }
+    }
+    .sec-benefits{
+        .intro h3{
+            font-size: 2rem;
+            font-weight: 600;           
+        }
+    }
 }
